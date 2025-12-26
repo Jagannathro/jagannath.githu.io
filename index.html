@@ -1,201 +1,717 @@
-<!DOCTYPE html>
+	<!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Jagannath Roy | Clinical Systems & Data Analytics</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <title>Jagannath Roy Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-  <meta name="description" content="Clinical Trial Support Professional with expertise in CTMS, EDC, eTMF, Power BI, SQL and global clinical trial operations.">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
 
-  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800" rel="stylesheet">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/aos.css">
+af
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
 
-  <style>
-    body {
-      background: #000;
-      color: #fff;
-      font-family: 'Poppins', sans-serif;
-    }
 
-    h1, h2, h3, h4 {
-      color: #fff;
-    }
 
-    /* ===== Career Roadmap ===== */
-    .timeline {
-      position: relative;
-      max-width: 900px;
-      margin: auto;
-    }
+<style>
 
-    .timeline::after {
-      content: '';
-      position: absolute;
-      width: 4px;
-      background: #00ff99;
-      top: 0;
-      bottom: 0;
-      left: 50%;
-      margin-left: -2px;
-    }
+/*======================================
+//--//-->   ABOUT
+======================================*/
 
-    .timeline-item {
-      padding: 20px 30px;
-      position: relative;
-      width: 50%;
-    }
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
 
-    .timeline-item.left {
-      left: 0;
-      text-align: right;
-    }
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
 
-    .timeline-item.right {
-      left: 50%;
-      text-align: left;
-    }
+.about-mf .about-img img {
+  margin-left: 10px;
+}
 
-    .timeline-content {
-      background: #111;
-      padding: 20px;
-      border-radius: 8px;
-      border: 1px solid #00ff99;
-    }
 
-    .timeline-content h3 {
-      color: #00ff99;
-      font-size: 18px;
-      margin-bottom: 5px;
-    }
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
 
-    .timeline-content h4 {
-      font-size: 16px;
-      margin-bottom: 10px;
-    }
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
 
-    .timeline-content ul {
-      padding-left: 18px;
-      margin: 0;
-    }
 
-    .timeline-content ul li {
-      font-size: 14px;
-      margin-bottom: 6px;
-    }
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
 
-    @media screen and (max-width: 768px) {
-      .timeline::after {
-        left: 20px;
-      }
-      .timeline-item {
-        width: 100%;
-        padding-left: 60px;
-        padding-right: 20px;
-        text-align: left;
-      }
-      .timeline-item.right {
-        left: 0;
-      }
-    }
-  </style>
-</head>
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
 
-<body>
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
 
-<!-- ===== NAV ===== -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-  <div class="container">
-    <a class="navbar-brand" href="#">Jagannath Roy</a>
-    <button class="navbar-toggler" data-toggle="collapse" data-target="#navMenu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navMenu">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-        <li class="nav-item"><a href="#career-roadmap" class="nav-link">Career</a></li>
-        <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
 
-<!-- ===== HERO ===== -->
-<section class="container text-center" style="padding-top:120px;">
-  <h1>Jagannath Roy</h1>
-  <h3>Clinical Trial Systems & Data Analytics Professional</h3>
-  <p>CTMS | EDC | eTMF | Power BI | SQL</p>
-</section>
 
-<!-- ===== ABOUT ===== -->
-<section id="about" class="container mt-5">
-  <h2>About Me</h2>
-  <p>
-    Clinical research professional with hands-on experience in global clinical trials,
-    centralized monitoring, and clinical systems support. Strong background in CTMS,
-    EDC, eTMF, compliance, dashboards, and automation.
-  </p>
-</section>
+/* project image zoom effect */
 
-<!-- ===== CAREER ROADMAP ===== -->
-<section id="career-roadmap" class="container mt-5">
-  <div class="text-center mb-4">
-    <h2>Career Roadmap</h2>
-    <p>Key milestones in my Clinical Trial Management career</p>
-  </div>
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
 
-  <div class="timeline">
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
 
-    <!-- IQVIA -->
-    <div class="timeline-item left">
-      <div class="timeline-content">
-        <h3>June 2023 – October 2025</h3>
-        <h4>IQVIA — Centralized Monitoring Assistant</h4>
-        <ul>
-          <li>CTMS, EDC (Rave, InForm), eTMF (ELVIS, Wingspan)</li>
-          <li>Site operations, document QC, inspection readiness</li>
-          <li>Clinical trial payments & system support</li>
-          <li>Dashboards, trackers & query management</li>
-          <li>GCP-compliant, on-time study delivery</li>
-        </ul>
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Jagannath Roy</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/l2.png);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Jagannath Roy</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Centralized Monitoring Assistant  ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>Please visit my profiles on:</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://www.linkedin.com/in/jagannath-roy-b54a59184?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BqnkhYBtrQvqwAhMJ%2F9Vb1w%3D%3D" class="btn btn-primary py-3 px-4">Linked In</a> 
+							<a href="https://github.com/Jagannathro" class="btn btn-white btn-outline-white py-3 px-4">Git Hub</a></p>
+
+					<h2>For reference, please drop a message on:</h2>
+								
+								<p>
+								  <a href="https://www.linkedin.com/in/jagannath-roy-b54a59184" target="_blank">
+								    <img src="https://raw.githubusercontent.com/Jagannathro/jagannath.githu.io/main/images/linkedin.png" alt="LinkedIn" style="width:40px; height:40px;">
+								  </a>
+								</p>
+
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/o2.png" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Jagannath Roy</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Centralized Monitoring Assista
+										nt </span></p>
+									<p><span class="title-s">Experience: </span> <span id="experience"></span></p>
+
+									<script>
+									  // Set your joining date (June 1, 2023)
+									  const joiningDate = new Date(2023, 5); // Month is 0-indexed (5 = June)
+									  const today = new Date();
+									
+									  let years = today.getFullYear() - joiningDate.getFullYear();
+									  let months = today.getMonth() - joiningDate.getMonth();
+									
+									  if (months < 0) {
+									    years--;
+									    months += 12;
+									  }
+									
+									  // Display the experience
+									  document.getElementById("experience").textContent = `${years} Year${years !== 1 ? 's' : ''} ${months} Month${months !== 1 ? 's' : ''}`;
+									</script>
+										  <p><span class="title-s">Address: </span> <span>Bengaluru, India</span></p>
+									  </div>
+									</div>
+								     </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Clinical Software handling</p>
+									<span>CTMS</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>e TMF: ELVIS, Wingspan, Veeva Vault </span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 98%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>EDC: Medidata Rave, Inform</span> <span class="pull-right">96%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 96%" aria-valuenow="96" aria-valuemin="0"
+											aria-valuemax="100"></div>
+
+									</div>
+									
+									<span> Veeva Vault</span> <span class="pull-right">91%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 91%" aria-valuenow="91" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>e COA</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span> SRTE Tool: Spotfire, Site Green Light </span> <span class="pull-right">98%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 98%" aria-valuenow="98" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									<p class="title-s">Data Analysis skills </p>
+									<span>Power BI</span> <span class="pull-right">98%</span>
+									<div class="progress">
+										<div class="progress-bar  bg-success" role="progressbar" style="width: 98%" aria-valuenow="98" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Advanced Excel: VBA</span> <span class="pull-right">98%</span>
+									<div class="progress">
+										<div class="progress-bar  bg-success" role="progressbar" style="width: 78%" aria-valuenow="98" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>SQL</span> <span class="pull-right">98%</span>
+									<div class="progress">
+										<div class="progress-bar  bg-success" role="progressbar" style="width: 88%" aria-valuenow="98" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>Python: VBA</span> <span class="pull-right">98%</span>
+									<div class="progress">
+									        <div class="progress-bar bg-success" role="progressbar" style="width: 98%" aria-valuenow="98" aria-valuemin="0" 
+										        aria-valuemax="100"></div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>I am a detail-oriented and results-driven clinical research professional with a Master’s degree in Pharmaceutics and a strong foundation in pharmaceutical sciences. With extensive hands-on experience in managing Clinical Trial Management Systems (CTMS), Electronic Data Capture (EDC), and Trial Master File (TMF) platforms such as ELVIS and Wingspan, I specialize in ensuring process efficiency, regulatory compliance, and high-quality project execution across global clinical trials.
+
+My core responsibilities include maintaining high site compliance through accurate CTMS data entry, overseeing site milestone and subject tracking, and managing audit-ready TMF documentation in accordance with ICH-GCP and SOP standards. I proactively support cross-functional teams by facilitating training compliance, managing study payments, and handling system access management across various platforms.
+
+I am technically proficient in Microsoft Excel, VBA Macros, and Power BI—developing automated trackers and interactive dashboards that provide valuable insights into site performance, query trends, and project health. Notable contributions include building the Quality Data Review (QDR) dashboards and automating trackers such as the SRtE and Site Monitoring Visit Trackers, significantly reducing manual workload and enhancing reporting accuracy.
+
+In recognition of my subject matter expertise, I have served as an Instructor-Led Training (ILT) Facilitator at IQVIA, onboarding new hires with structured training on tools and systems. As a Subject Matter Expert (SME) in Excel, IWRS, and SRtE, I regularly conduct knowledge-sharing sessions and troubleshooting support to uplift team capabilities.
+
+My strengths lie in combining domain expertise with technical skills to drive continuous improvement, enhance operational transparency, and deliver quality outcomes in every project I’m part of.</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Centralized Monitoring &amp; Project Management</span></li>
+									<li class="d-flex"><span>Domain:</span> <span>Contract Research Org</span></li>
+									<li class="d-flex"><span>Education:</span> <span> Masters in Pharmaceutics</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Hindi, Kannada, Bengali</span></li>
+									<li class="d-flex"><span>BI Tools:</span> <span>Microsoft Power BI &amp; Spotfire</span></li>
+									<li class="d-flex"><span>Other Skills:</span> <span>Power BI, Excel,SQL,Python &amp; SEO</span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="7">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2023-Present</span>
+						<h2>Centralized Monitoring assistant</h2>
+						<span class="position">IQVIA</span>
+						<p class="mt-4">IQVIA is a global leader in advanced analytics, technology solutions, and clinical research services for the life sciences industry.
+				<li><strong>Study and Data Management:</strong> Proficient in CTMS, EDC (RAVE), and TMF systems (ELVIS, Wingspan) for clinical trial oversight. Managed document tracking, site milestone updates, and ensured compliance with ICH GCP and SOPs. Supported training compliance, managed study payments and invoices, and performed system access management across platforms.</li>
+
+<li><strong>Documentation and Audit Readiness:</strong> Coordinated and maintained TMF documentation with routine QC, audit preparation, and final reconciliation. Contributed to audit readiness by ensuring completeness, version control, and timely uploads of essential study documents.</li>
+
+<li><strong>Data Analysis and Quality Monitoring:</strong> Analyzed diverse datasets to derive actionable metrics and insights. Monitored data quality, identified inconsistencies, implemented corrective actions, and ensured real-time issue resolution aligned with CRA escalations.</li>
+
+<li><strong>Technical Proficiency:</strong> Skilled in Power BI for generating QDR dashboards and site performance reports. Developed automated Excel trackers using VBA Macros to improve reporting efficiency. Experienced in Excel formulas, MS Office, and reporting tools for decision support.</li>
+
+<li><strong>Study Tools and Communication:</strong> Sent site activation blast emails, EDP meeting reminders, and managed forecasting reports using the CM platform. Proficient in preparing ISF Binders via Site Green Light tool and managing study-related communication tasks effectively.</li>
+
+<li><strong>Cross-functional Collaboration:</strong> Facilitated issue tracking and resolution, coordinated with multiple stakeholders including CRAs and study teams, and supported centralized monitoring processes through data-driven insights and reporting tools.</li>
+
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2021-2023</span>
+    					<h2>Master in Pharmaceutics</h2>
+    					<span class="position">PES University</span>
+    					<p class="mt-4">CGPA: 9.71.</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2017-2021</span>
+    					<h2>Bachelor of Pharmacy</h2>
+    					<span class="position">Rajiv Gandhi University of Health science</span>
+    					<p class="mt-4">CGPA: 7.9</p>
+    				</div>
+				</div>
+
+			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+				<span class="date">2024-2025</span>
+				<h2>Data Analytics</h2>
+				<span class="position">Skillovilla</span>
+				<p class="mt-4">GOLD</p>
+				<a href="https://github.com/Jagannathro/All-Certificates/blob/main/certificate.pdf" target="_blank" style="color: #007bff; text-decoration: underline;">View Certificate</a>
+
+    				</div>
+				</div>
+    		</div>
+
+    		
+    		</div>
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>Below are the sample Data Analytics projects on SQL, Python, Power BI, Excel.</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/Jagannathro/Shopnest_Data_Analysis__by_Powerbi" class="block-20 zoom-effect" style="background-image: url('images/Shopnest.gif');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/Jagannathro/Shopnest_Data_Analysis__by_Powerbi">Shopnest Data Analysis By Power BI</a></h3>
+                <p>This project leverages sales data from ShopNest to drive business growth. </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/Jagannathro/PWC_Call_Center" class="block-20 zoom-effect" style="background-image: url('images/CALL.gif');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/Jagannathro/PWC_Call_Center">PwC PowerBI Experience Call Center Trends Analysis</a></h3>
+                <p> As a business data analyst to help an organization named “PhoneNow” to analyze their data and help them understand how they can leverage on their massive amount of data.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/Jagannathro/PWC-Customer-Churn-Retention" class="block-20 zoom-effect" style="background-image: url('images/CHURN.gif');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/Jagannathro/PWC-Customer-Churn-Retention">PWC Power BI Virtual work experience Customer Churn Retention</a></h3>
+                <p>Completed the Data transformation in Power Query and the dataset loaded into Microsoft Power BI Desktop for modeling.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/Jagannathro/Diversity-and-Inclusion" class="block-20 zoom-effect" style="background-image: url('images/DI.gif');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/Jagannathro/Diversity-and-Inclusion">Diversity & Inclusion Project: Advancing Gender Balance in Executive Leadership</a></h3>
+				  <p> This project is centered around advancing gender balance in the executive leadership of a prominent telecom client. I've utilized Power BI to create meaningful Key Performance Indicators (KPIs) and visualize gender diversity insights.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/Jagannathro/Capstone_Python" class="block-20 zoom-effect" style="background-image: url('images/saap.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+
+					<h3 class="heading"><a href="https://github.com/Jagannathro/Capstone_Python">SkilloVilla-Capstone Python</a></h3>
+					<p>Used multiple machine learning models to forecast sales (retail store) and performed time series analysis.</p>
+				  </div>
+				</div>
+			  </div>
+			  <div class="col-md-4 d-flex ftco-animate">
+				  <div class="blog-entry justify-content-end">
+				  <a href="https://github.com/Jagannathro/Accenture_DA_Forage" class="block-20 zoom-effect" style="background-image: url('images/social\ media\ logo.png');">
+				  </a>
+				  <div class="text mt-3 float-right d-block">
+	
+  
+				  <h3 class="heading"><a href="https://github.com/Jagannathro/Accenture_DA_Forage">Social Media Data-Analytics-and-Visualization Accenture</a></h3>
+				  <p>Client's Problem that Accenture is tasked to address : The client has reached a massive scale within recent years and does not have the resources internally to handle it.</p>
+				</div>
+			  </div>
+			</div>
+		 </div>
+	  </div>
+	  <br>
+	  <!-- added justify-content-center to center align the last two projects -->
+	  <div class="row d-flex justify-content-center">  
+		  <div class="col-md-4 d-flex ftco-animate">
+			  <div class="blog-entry justify-content-end">
+			  <a href="https://github.com/Jagannathro/Airline_DB_SQL_DA" class="block-20 zoom-effect" style="background-image: url('images/SQL\ logo\ with\ the\ phrase\ SQL\ is\ a\ structured\ query\ language.png');">
+			  </a>
+			  <div class="text mt-3 float-right d-block">
+
+				<h3 class="heading"><a href="https://github.com/Jagannathro/Airline_DB_SQL_DA">Airline Database Capstone Project-SQL</a></h3>
+				<p>The aim of this project is to tackle real-world issues through SQL queries related to seat allocation, flight schedules, and passenger information..</p>
+			  </div>
+			</div>
+		  </div>
+		<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/Jagannathro/Freshco_Hypermart_Excel_DA" class="block-20 zoom-effect" style="background-image: url('images/Freshco\ Hypermart\ logo.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+
+				<h3 class="heading"><a href="https://github.com/Jagannathro/Freshco_Hypermart_Excel_DA">Freshco_Hypermart_Excel_Data_Analysis</a></h3>
+				<p>Freshco Hypermarket, situated in HSR, Bangalore, has established itself as a prominent supermarket in the region, catering to a wide range of customers.</p>
+			  </div>
+			</div>
+		  </div>
+	   </div>
+	</div>
+    <section class="ftco-section" id="project-section">
+		<div class="container">
+		  <div class="row justify-content-center mb-5 pb-5">
+			<div class="col-md-7 heading-section text-center ftco-animate">
+			  <h1 class="big big-2">Certification</h1>
+			  <h2 class="mb-4">Certification</h2>
+			  <div class="row">
+				<div class="col-md-12">
+					<div class="resume-wrap ftco-animate">
+						<ul style="display: inline;">
+							<li class="heading"><a href="https://github.com/Jagannathro/All-Certificates/blob/main/PWC_completion_certificate.pdf">PWC Power BI job stimulation</a></liclass>
+							<li class="heading"><a href="https://github.com/Jagannathro/All-Certificates/blob/main/Accenture%20North%20America_completion_certificate.pdf">Accenture Data Analytics and Visualization job stimulation</a></liclass>
+							<li class="heading"><a href="https://github.com/Jagannathro/All-Certificates/blob/main/CertificateOfCompletion_Career%20Essentials%20in%20Generative%20AI%20by%20Microsoft%20and%20LinkedIn.pdf">Career Essentials in Generative AI by Microsoft and Linked In</a></liclass>
+							<li class="heading"><a href="https://github.com/Jagannathro/All-Certificates/blob/main/Analytics%20Academy%20google.pdf">Google Analytics for Beginners</a></liclass>
+						</ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+		<!-- <div class="container"> -->
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>More projects on<span> Github  </span> </h2>
+					<div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data stories </h4>
+					<br>
+					
+					</div>
+				</div>
+			</div>
+		<!-- </div> -->
+	</div>
+</section>
 
-    <!-- Sanofi -->
-    <div class="timeline-item right">
-      <div class="timeline-content">
-        <h3>October 2025 – Present</h3>
-        <h4>Sanofi — Clinical Trial Support Associate</h4>
-        <ul>
-          <li>SOP governance & Independent Process Controls (IPC)</li>
-          <li>Trial setup oversight & global project coordination</li>
-          <li>CAPA tracking & audit readiness</li>
-          <li>Vendor oversight & cross-functional collaboration</li>
-          <li>Regulatory-aligned global trial execution</li>
-        </ul>
-      </div>
-    </div>
 
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+<div class="row d-flex contact-info mb-5 justify-content-center">
+
+  <!-- Address -->
+  <div class="col-md-2 col-lg-2 d-flex ftco-animate justify-content-center">
+    <div class="align-self-stretch box p-3 text-center">
+      <a href="https://www.google.com/maps/place/Bengaluru,+India" target="_blank">
+        <img src="https://raw.githubusercontent.com/Jagannathro/jagannath.githu.io/main/images/google-maps.png" alt="Address" style="width:40px; height:40px;">
+      </a>
+      <p class="mt-2 mb-0">Bengaluru,<br>India</p>
+    </div>
   </div>
-</section>
 
-<!-- ===== PROJECTS ===== -->
-<section id="projects" class="container mt-5">
-  <h2>Projects</h2>
-  <p>Data Analytics & Clinical Systems Projects available on GitHub.</p>
-</section>
+  <!-- Phone -->
+  <div class="col-md-2 col-lg-2 d-flex ftco-animate justify-content-center">
+    <div class="align-self-stretch box p-3 text-center">
+      <a href="tel://6363696315">
+        <img src="https://raw.githubusercontent.com/Jagannathro/jagannath.githu.io/main/images/mobile.png" alt="Phone" style="width:40px; height:40px;">
+      </a>
+      <p class="mt-2 mb-0">6363696315</p>
+    </div>
+  </div>
 
-<!-- ===== CONTACT ===== -->
-<section id="contact" class="container mt-5 mb-5">
-  <h2>Contact</h2>
-  <p>Email: jagannathasus420@gmail.com</p>
-  <p>LinkedIn: linkedin.com/in/jagannath-roy</p>
-  <p>GitHub: github.com/Jagannathro</p>
-</section>
+  <!-- Email -->
+  <div class="col-md-3 col-lg-3 d-flex ftco-animate justify-content-center">
+    <div class="align-self-stretch box p-3 text-center">
+      <a href="mailto:jagannathasus420@gmail.com">
+        <img src="https://raw.githubusercontent.com/Jagannathro/jagannath.githu.io/main/images/gmail.png" alt="Email" style="width:40px; height:40px;">
+      </a>
+      <p class="mt-2 mb-0">jagannathasus420@gmail.com</p>
+    </div>
+  </div>
 
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+  <!-- GitHub -->
+  <div class="col-md-2 col-lg-2 d-flex ftco-animate justify-content-center">
+    <div class="align-self-stretch box p-3 text-center">
+      <a href="https://github.com/Jagannathro" target="_blank">
+        <img src="https://raw.githubusercontent.com/Jagannathro/jagannath.githu.io/main/images/github.png" alt="GitHub" style="width:40px; height:40px;">
+      </a>
+      <p class="mt-2 mb-0">Jagannathro</p>
+    </div>
+  </div>
 
-</body>
+  <!-- Instagram -->
+  <div class="col-md-2 col-lg-2 d-flex ftco-animate justify-content-center">
+    <div class="align-self-stretch box p-3 text-center">
+      <a href="https://www.instagram.com/betared.bill/" target="_blank">
+        <img src="https://raw.githubusercontent.com/Jagannathro/jagannath.githu.io/main/images/instagram.png" alt="Instagram" style="width:40px; height:40px;">
+      </a>
+      <p class="mt-2 mb-0">@betared.bill</p>
+    </div>
+  </div>
+
+  <!-- LinkedIn -->
+  <div class="col-md-2 col-lg-2 d-flex ftco-animate justify-content-center">
+    <div class="align-self-stretch box p-3 text-center">
+      <a href="https://www.linkedin.com/in/jagannath-roy-b54a59184/" target="_blank">
+        <img src="https://raw.githubusercontent.com/Jagannathro/jagannath.githu.io/main/images/linkedin.png" alt="LinkedIn" style="width:40px; height:40px;">
+      </a>
+      <p class="mt-2 mb-0">Jagannath Roy</p>
+    </div>
+  </div>
+
+</div>
+
+
+
+          </div>
+		  <br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt"> " Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do. If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart, you'll know when you find it " - Steve Jobs </li>	
+				</div>
+			</div>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
 </html>
