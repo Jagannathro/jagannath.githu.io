@@ -363,35 +363,70 @@ My strengths lie in combining domain expertise with technical skills to drive co
 		</div>
     </section>
 
+<!-- ================= EXPERIENCE SECTION ================= -->
+<section class="ftco-section" id="experience-section">
+  <div class="container">
+    <div class="row mb-5 text-center">
+      <div class="col-md-12">
+        <h1 class="big big-2">Experience</h1>
+        <h2 class="mb-4">Professional Experience</h2>
+      </div>
+    </div>
+    <div class="experience-timeline">
+      <!-- IQVIA -->
+      <div class="exp-item left">
+        <div class="exp-card">
+          <div class="exp-header">
+            <img src="https://raw.githubusercontent.com/Jagannathro/jagannath.githu.io/main/images/IQVIA.webp" alt="IQVIA">
+            <strong>IQVIA</strong>
+          </div>
+          <h2>Centralized Monitoring Assistant</h2>
+          <h4>Clinical Operations & Data Oversight</h4>
+          <div class="exp-duration">June 2023 – October 2025 · 2 Years 4 Months</div>
+          <p>Hands-on experience supporting global clinical trials using <strong>CTMS, EDC (Rave, InForm), and eTMF (ELVIS, Wingspan)</strong>. Managed site milestones, TMF QC, audit readiness, study payments, and system access management. Built <strong>Power BI dashboards</strong> and automated Excel trackers using VBA to ensure GCP-compliant and on-time study execution.</p>
+        </div>
+      </div>
+      <!-- SANOFI -->
+      <div class="exp-item right">
+        <div class="exp-card">
+          <div class="exp-header">
+            <img src="https://raw.githubusercontent.com/Jagannathro/jagannath.githu.io/main/images/Sanofi.jpg" alt="Sanofi">
+            <strong>Sanofi</strong>
+          </div>
+          <h2>Clinical Trial Support Associate</h2>
+          <h4>R&D Systems & Quality Compliance</h4>
+          <div class="exp-duration">October 2025 – Present</div>
+          <p>Expanded responsibilities into <strong>SOP governance</strong>, <strong>Independent Process Controls (IPC)</strong>, <strong>CAPA tracking</strong>, and global study setup oversight. Supported quality compliance, cross-functional collaboration, vendor coordination, and ensured regulatory-aligned, audit-ready clinical trial processes across global studies.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
+<!-- ================= EXPERIENCE STYLES ================= -->
+<style>
+.experience-timeline { position: relative; max-width: 1100px; margin: 80px auto; }
+.experience-timeline::before { content: ""; position: absolute; top: 0; bottom: 0; left: 50%; width: 3px; background: rgba(255, 189, 57, 0.8); transform: translateX(-50%); }
+.exp-item { position: relative; width: 50%; padding: 30px 40px; }
+.exp-item.left { left: 0; text-align: right; }
+.exp-item.right { left: 50%; text-align: left; }
+.exp-item::before { content: ""; position: absolute; top: 45px; width: 14px; height: 14px; background: #ffbd39; border-radius: 50%; z-index: 2; }
+.exp-item.left::before { right: -7px; }
+.exp-item.right::before { left: -7px; }
+.exp-card { background: #111; padding: 25px; border-radius: 10px; box-shadow: 0 0 20px rgba(255,189,57,0.15); }
+.exp-header { display: flex; align-items: center; gap: 12px; }
+.exp-header img { width: 42px; background: #fff; padding: 6px; border-radius: 6px; }
+.exp-card h2 { color: #fff; font-size: 20px; margin: 12px 0 5px; }
+.exp-card h4 { color: #ffbd39; font-size: 15px; margin-bottom: 6px; }
+.exp-duration { color: #aaa; font-size: 14px; margin-bottom: 12px; }
+.exp-card p { color: #ccc; font-size: 14px; line-height: 1.6; }
 
-		<div class="row">
-			<h1 class="big-4">Experience</h1>
-			<div class="underline"></div>
-		</div>
-		<br>
-		
-		<div class="row">
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">2023-Present</span>
-						<h2>Centralized Monitoring assistant</h2>
-						<span class="position">IQVIA</span>
-						<p class="mt-4">IQVIA is a global leader in advanced analytics, technology solutions, and clinical research services for the life sciences industry.
-				<li><strong>Study and Data Management:</strong> Proficient in CTMS, EDC (RAVE), and TMF systems (ELVIS, Wingspan) for clinical trial oversight. Managed document tracking, site milestone updates, and ensured compliance with ICH GCP and SOPs. Supported training compliance, managed study payments and invoices, and performed system access management across platforms.</li>
-
-<li><strong>Documentation and Audit Readiness:</strong> Coordinated and maintained TMF documentation with routine QC, audit preparation, and final reconciliation. Contributed to audit readiness by ensuring completeness, version control, and timely uploads of essential study documents.</li>
-
-<li><strong>Data Analysis and Quality Monitoring:</strong> Analyzed diverse datasets to derive actionable metrics and insights. Monitored data quality, identified inconsistencies, implemented corrective actions, and ensured real-time issue resolution aligned with CRA escalations.</li>
-
-<li><strong>Technical Proficiency:</strong> Skilled in Power BI for generating QDR dashboards and site performance reports. Developed automated Excel trackers using VBA Macros to improve reporting efficiency. Experienced in Excel formulas, MS Office, and reporting tools for decision support.</li>
-
-<li><strong>Study Tools and Communication:</strong> Sent site activation blast emails, EDP meeting reminders, and managed forecasting reports using the CM platform. Proficient in preparing ISF Binders via Site Green Light tool and managing study-related communication tasks effectively.</li>
-
-<li><strong>Cross-functional Collaboration:</strong> Facilitated issue tracking and resolution, coordinated with multiple stakeholders including CRAs and study teams, and supported centralized monitoring processes through data-driven insights and reporting tools.</li>
-
-						</p>
-					</div>
+/* Mobile */
+@media (max-width: 768px) {
+  .experience-timeline::before { left: 20px; }
+  .exp-item { width: 100%; left: 0 !important; padding-left: 60px; padding-right: 25px; text-align: left; }
+  .exp-item::before { left: 13px; }
+}
+</style>
 
 				</div>
 			</div>
