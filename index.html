@@ -384,125 +384,170 @@ My strengths lie in combining domain expertise with technical skills to drive co
     <link rel="stylesheet" href="css/style.css">
 
 <style>
-/* ================= EXPERIENCE ROADMAP ================= */
-
-.timeline-roadmap {
+<!-- ================= EXPERIENCE SECTION ================= -->
+<style>
+/* EXPERIENCE TIMELINE */
+.experience-timeline {
   position: relative;
-  max-width: 1000px;
-  margin: 50px auto;
+  max-width: 1100px;
+  margin: 80px auto;
 }
 
-.timeline-roadmap::after {
-  content: '';
+.experience-timeline::before {
+  content: "";
   position: absolute;
-  width: 4px;
-  background-color: #ffbd39;
   top: 0;
   bottom: 0;
   left: 50%;
-  margin-left: -2px;
+  width: 3px;
+  background: rgba(255, 189, 57, 0.8);
+  transform: translateX(-50%);
 }
 
-.roadmap-item {
-  padding: 20px 40px;
+.exp-item {
   position: relative;
   width: 50%;
+  padding: 30px 40px;
 }
 
-.roadmap-item::after {
-  content: '';
+.exp-item.left {
+  left: 0;
+  text-align: right;
+}
+
+.exp-item.right {
+  left: 50%;
+  text-align: left;
+}
+
+.exp-item::before {
+  content: "";
   position: absolute;
-  width: 18px;
-  height: 18px;
-  right: -9px;
-  background-color: #fff;
-  border: 4px solid #ffbd39;
-  top: 30px;
+  top: 45px;
+  width: 14px;
+  height: 14px;
+  background: #ffbd39;
   border-radius: 50%;
-  z-index: 1;
+  z-index: 2;
 }
 
-.left { left: 0; }
-.right { left: 50%; }
-.right::after { left: -9px; }
+.exp-item.left::before { right: -7px; }
+.exp-item.right::before { left: -7px; }
 
-.roadmap-content {
+.exp-card {
   background: #111;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 15px rgba(255,189,57,0.2);
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255,189,57,0.15);
 }
 
-.roadmap-content h3 {
-  color: #ffbd39;
-  font-size: 16px;
+.exp-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
-.roadmap-content h2 {
+.exp-header img {
+  width: 42px;
+  background: #fff;
+  padding: 6px;
+  border-radius: 6px;
+}
+
+.exp-card h2 {
   color: #fff;
   font-size: 20px;
-  margin-bottom: 10px;
+  margin: 12px 0 5px;
 }
 
-.roadmap-content p {
+.exp-card h4 {
+  color: #ffbd39;
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+.exp-duration {
+  color: #aaa;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.exp-card p {
   color: #ccc;
   font-size: 14px;
   line-height: 1.6;
 }
 
-@media screen and (max-width: 768px) {
-  .timeline-roadmap::after { left: 20px; }
-  .roadmap-item {
+/* Mobile */
+@media (max-width: 768px) {
+  .experience-timeline::before { left: 20px; }
+
+  .exp-item {
     width: 100%;
+    left: 0 !important;
     padding-left: 60px;
     padding-right: 25px;
+    text-align: left;
   }
-  .roadmap-item::after { left: 11px; }
-  .right { left: 0; }
+
+  .exp-item::before { left: 13px; }
 }
 </style>
-</head>
-
-<body>
-
-<!-- ================= EXPERIENCE SECTION (REPLACED) ================= -->
 
 <section class="ftco-section" id="experience-section">
   <div class="container">
 
-    <div class="row">
-      <h1 class="big-4">Experience</h1>
-      <div class="underline"></div>
+    <div class="row mb-5 text-center">
+      <div class="col-md-12">
+        <h1 class="big big-2">Experience</h1>
+        <h2 class="mb-4">Professional Experience</h2>
+      </div>
     </div>
 
-    <div class="timeline-roadmap">
+    <div class="experience-timeline">
 
-      <div class="roadmap-item left ftco-animate">
-        <div class="roadmap-content">
-          <h3>June 2023</h3>
-          <h2>IQVIA – Centralized Monitoring Assistant</h2>
+      <!-- IQVIA -->
+      <div class="exp-item left">
+        <div class="exp-card">
+          <div class="exp-header">
+            <img src="https://raw.githubusercontent.com/Jagannathro/jagannath.githu.io/main/images/IQVIA.webp" alt="IQVIA">
+            <strong>IQVIA</strong>
+          </div>
+
+          <h2>Centralized Monitoring Assistant</h2>
+          <h4>Clinical Operations & Data Oversight</h4>
+          <div class="exp-duration">June 2023 – October 2025 · 2 Years 4 Months</div>
+
           <p>
             Hands-on experience supporting global clinical trials using
             <strong>CTMS, EDC (Rave, InForm), and eTMF (ELVIS, Wingspan)</strong>.
             Managed site milestones, TMF QC, audit readiness, study payments,
-            and system access management. Built <strong>Power BI dashboards</strong>
-            and automated Excel trackers using VBA to ensure
-            GCP-compliant and on-time study execution.
+            and system access management.
+            Built <strong>Power BI dashboards</strong> and automated Excel trackers
+            using VBA to ensure GCP-compliant and on-time study execution.
           </p>
         </div>
       </div>
 
-      <div class="roadmap-item right ftco-animate">
-        <div class="roadmap-content">
-          <h3>October 2025</h3>
-          <h2>Sanofi – Clinical Trial Support Associate</h2>
+      <!-- SANOFI -->
+      <div class="exp-item right">
+        <div class="exp-card">
+          <div class="exp-header">
+            <img src="https://raw.githubusercontent.com/Jagannathro/jagannath.githu.io/main/images/Sanofi.jpg" alt="Sanofi">
+            <strong>Sanofi</strong>
+          </div>
+
+          <h2>Clinical Trial Support Associate</h2>
+          <h4>R&D Systems & Quality Compliance</h4>
+          <div class="exp-duration">October 2025 – Present</div>
+
           <p>
-            Expanded responsibilities into <strong>SOP governance,
-            Independent Process Controls (IPC), CAPA tracking</strong>,
-            and global study setup oversight. Supported quality compliance,
-            cross-functional collaboration, vendor coordination, and ensured
-            regulatory-aligned, audit-ready clinical trial processes across
-            global studies.
+            Expanded responsibilities into <strong>SOP governance</strong>,
+            <strong>Independent Process Controls (IPC)</strong>,
+            <strong>CAPA tracking</strong>, and global study setup oversight.
+            Supported quality compliance, cross-functional collaboration,
+            vendor coordination, and ensured regulatory-aligned,
+            audit-ready clinical trial processes across global studies.
           </p>
         </div>
       </div>
@@ -510,65 +555,8 @@ My strengths lie in combining domain expertise with technical skills to drive co
     </div>
   </div>
 </section>
-
 <!-- ================= END EXPERIENCE ================= -->
 
-
-	<div class="roadmap-item left ftco-animate">
-  <div class="roadmap-content">
-
-    <div style="display:flex; align-items:center; gap:12px; margin-bottom:10px;">
-      <img src="https://raw.githubusercontent.com/Jagannathro/jagannath.githu.io/main/images/IQVIA.webp"
-           alt="IQVIA Logo"
-           style="width:50px; height:auto; background:#fff; padding:4px; border-radius:6px;">
-      <div>
-        <h2 style="margin:0;">IQVIA</h2>
-        <small style="color:#ffbd39;">
-          Centralized Monitoring Assistant <br>
-          June 2023 – October 2025 (2 Years 4 Months)
-        </small>
-      </div>
-    </div>
-
-    <p>
-      Hands-on experience supporting global clinical trials using
-      <strong>CTMS, EDC (Rave, InForm), and eTMF (ELVIS, Wingspan)</strong>.
-      Managed site milestones, TMF QC, audit readiness, study payments,
-      and system access management. Built <strong>Power BI dashboards</strong>
-      and automated Excel trackers using VBA to ensure
-      GCP-compliant and on-time study execution.
-    </p>
-
-  </div>
-</div>
-
-
-<div class="roadmap-item right ftco-animate">
-  <div class="roadmap-content">
-
-    <div style="display:flex; align-items:center; gap:12px; margin-bottom:10px;">
-      <img src="https://raw.githubusercontent.com/Jagannathro/jagannath.githu.io/main/images/Sanofi.jpg"
-           alt="Sanofi Logo"
-           style="width:50px; height:auto; background:#fff; padding:4px; border-radius:6px;">
-      <div>
-        <h2 style="margin:0;">Sanofi</h2>
-        <small style="color:#ffbd39;">
-          Clinical Trial Support Associate <br>
-          October 2025 – Present
-        </small>
-      </div>
-    </div>
-
-    <p>
-      Expanded responsibilities into <strong>SOP governance,
-      Independent Process Controls (IPC), CAPA tracking</strong>,
-      and global study setup oversight. Supported quality compliance,
-      cross-functional collaboration, vendor coordination, and ensured
-      regulatory-aligned, audit-ready clinical trial processes across
-      global studies.
-    </p>
-
-  </div>
 </div>
 
 </body>
